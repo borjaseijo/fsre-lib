@@ -9,6 +9,12 @@ function [ numFinalFeatures, nomThreshold, typeThreshold, complexAcum] = ...
 %       - Fixed thresholds obtain the number of features according to a
 %       proportion of the total feature number.
 %
+%   AUTHORS:
+%   -----------------------------------------------------------------------
+%   Borja Seijo-Pardo, Veronica Bolon-Canedo, Amparo Alonso-Betanzos
+%   Laboratory for Research and Development in Artificial Intelligence
+%   (LIDIA Group) Universidad of A Coruna
+%
 %   INPUTS:
 %   -----------------------------------------------------------------------
 %   which ----------------> Threshold method. Select one of the following options:
