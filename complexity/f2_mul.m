@@ -4,6 +4,12 @@ function [result] = f2_mul (dataset, classes)
 %   Each element in array corresponds with each dataset feature. This
 %   function can work with multiclass datasets.
 %
+%   AUTHORS:
+%   -----------------------------------------------------------------------
+%   Borja Seijo-Pardo, Veronica Bolon-Canedo, Amparo Alonso-Betanzos
+%   Laboratory for Research and Development in Artificial Intelligence
+%   (LIDIA Group) Universidad of A Coruna
+%
 %   INPUTS:
 %   -----------------------------------------------------------------------
 %   dataset ---> Dataset matrix where rows corresponds with dataset samples and
