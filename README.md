@@ -33,7 +33,7 @@ You need at least the following software versions:
 ## Authors
 
 * [**Borja Seijo-Pardo**](https://scholar.google.es/citations?user=A8-eWegAAAAJ)
-* [**Veronica Bolón-Canedo**](https://scholar.google.es/citations?user=ameK2ocAAAAJ&hl=es)
+* [**Verónica Bolón-Canedo**](https://scholar.google.es/citations?user=ameK2ocAAAAJ&hl=es)
 * [**Amparo Alonso-Betanzos**](https://scholar.google.es/citations?user=4SX-5-oAAAAJ&hl=es)
 
 Laboratory for Research and Development in Artificial Intelligence (LIDIA Group) Universidad of A Coruna
