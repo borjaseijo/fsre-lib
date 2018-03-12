@@ -1,9 +1,9 @@
 function [ output_rank ] = svm_rank( input_ranks, rootDir, cParam )
 
-trainFile = [rootDir filesep 'svm_ranker' filesep 'svmrank_train.dat'];
-testFile = [rootDir filesep 'svm_ranker' filesep 'svmrank_test.dat'];
-modelFile = [rootDir filesep 'svm_ranker' filesep 'svmrank_model.dat'];
-predictionsFile = [rootDir filesep 'svm_ranker' filesep 'svmrank_predictions.dat'];
+trainFile = [rootDir filesep 'combination' filesep 'svmrank' filesep 'svmrank_train.dat'];
+testFile = [rootDir filesep 'combination' filesep 'svmrank' filesep 'svmrank_test.dat'];
+modelFile = [rootDir filesep 'combination' filesep 'svmrank' filesep 'svmrank_model.dat'];
+predictionsFile = [rootDir filesep 'combination' filesep 'svmrank' filesep 'svmrank_predictions.dat'];
 
 N_nodes = length(input_ranks);
 N_features = length(input_ranks{1});
@@ -71,8 +71,8 @@ end
 sprintf('Close Test file')
 fclose(fid);
 
-s = evalc(['!"' rootDir filesep 'svm_ranker' filesep 'svm_rank_learn" -c ' int2str(cParam) ' "' trainFile '" "' modelFile '"']);
-s = evalc(['!"' rootDir filesep 'svm_ranker' filesep 'svm_rank_classify" "' testFile '" "' modelFile '" "' predictionsFile '"']);
+s = evalc(['!"' rootDir filesep 'combination' filesep 'svmrank' filesep 'svm_rank_learn" -c ' int2str(cParam) ' "' trainFile '" "' modelFile '"']);
+s = evalc(['!"' rootDir filesep 'combination' filesep 'svmrank' filesep 'svm_rank_classify" "' testFile '" "' modelFile '" "' predictionsFile '"']);
 
 
 fid = fopen(predictionsFile, 'r');
