@@ -43,3 +43,5 @@ Laboratory for Research and Development in Artificial Intelligence (LIDIA Group)
 This project is licensed under the MIT License.
 
 ## Acknowledgments
+
+This research has been financially supported in part by the *Ministerio Español de Economía y Competitividad* (research project TIN 2015-65069-C2-1-R), by the *Xunta de Galicia* (research projects GRC2014/035 and the *Centro Singular de Investigación de Galicia*, accreditation 2016-2019) and by the *European Union* (FEDER/ERDF).
