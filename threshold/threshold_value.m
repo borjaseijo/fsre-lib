@@ -181,11 +181,11 @@ function [ numFinalFeatures, nomThreshold, typeThreshold, complexAcum] = ...
                 typeThreshold = 2;
             case 8, % Fixed threshold based on selecting 1% features.
                 nomThreshold = '1%';
-                numFinalFeatures = round(0.01*featuresNumber);;
+                numFinalFeatures = round(0.01*featuresNumber);
                 typeThreshold = 3;
             case 9, % Fixed threshold based on selecting 5% features.
                 nomThreshold = '5%';
-                numFinalFeatures = round(0.05*featuresNumber);;
+                numFinalFeatures = round(0.05*featuresNumber);
                 typeThreshold = 3;
             case 10, % Fixed threshold based on selecting 10% features.
                 nomThreshold = '10%';
@@ -206,6 +206,10 @@ function [ numFinalFeatures, nomThreshold, typeThreshold, complexAcum] = ...
             otherwise
                 error('threhold:incorrect', 'Incorrect threshold value');
         end;
+        % Return at least 1 feature.
+        if (numFinalFeatures <= 0)
+            numFinalFeatures = 1;
+        end
     else
         error('threhold:incorrect', 'Incorrect threshold value');
     end;
